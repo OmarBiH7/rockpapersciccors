@@ -1,6 +1,15 @@
 console.log("Welcome to Rock, Paper, Scissors!");
 
-function getComputerChoice(rock, paper, Scissors) {
-  return Math.floor(Math.random() * 3);
+function getComputerChoice() {
+  const randomNumber = Math.floor(Math.random() * 3);
+
+  if (randomNumber === 1) {
+    return "Rock";
+  } else if (randomNumber === 2) {
+    return "Paper";
+  } else {
+    return "Sciccors";
+  }
 }
+
 console.log(getComputerChoice(3));
