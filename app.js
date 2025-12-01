@@ -13,3 +13,14 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice(3));
+
+function getHumanChoice() {
+  let Humanchoice = prompt("Enter Rock, Paper or Sciccors");
+
+  let humanScore = 0;
+  let computerScore = 0;
+}
+console.log(getHumanChoice());
+
+let humanScore = 0;
+let computerScore = 0;
