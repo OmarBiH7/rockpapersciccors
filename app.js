@@ -24,16 +24,16 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice === computerChoice) {
-      return console.log("it's a draw!");
+      console.log("it's a draw!");
     } else if (
       (humanChoice === "rock" && computerChoice === "sciccors") ||
       (humanChoice === "paper" && computerChoice === "rock") ||
       (humanChoice === "sciccors" && computerChoice === "paper")
     ) {
-      return console.log(`You Win! ${humanChoice} beats ${computerChoice} `);
+      console.log(`You Win! ${humanChoice} beats ${computerChoice} `);
       humanScore++;
     } else {
-      return console.log(`You Win! ${computerChoice} beats ${humanChoice} `);
+      console.log(`You Win! ${computerChoice} beats ${humanChoice} `);
       computerScore++;
     }
   }
@@ -47,11 +47,11 @@ function playGame() {
   console.log(`${humanScore} vs ${computerScore}`);
 
   if (humanScore > computerScore) {
-    return console.log("You Win!");
-  } else if (comnputerScore > humanScore) {
-    return console.log("You Lose!");
+    console.log("You Win!");
+  } else if (computerScore > humanScore) {
+    console.log("You Lose!");
   } else {
-    return console.log("It's a Draw!");
+    console.log("It's a Draw!");
   }
 }
 
