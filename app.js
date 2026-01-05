@@ -12,13 +12,10 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice(3));
-
 function getHumanChoice() {
-  let Humanchoice = prompt("Enter Rock, Paper or Sciccors");
-  return Humanchoice;
+  let humanChoice = prompt("Enter Rock, Paper or Sciccors");
+  return humanChoice;
 }
-console.log(getHumanChoice(3));
 
 function playGame() {
   let humanScore = 0;
