@@ -22,6 +22,7 @@ function playGame() {
   let computerScore = 0;
 
   function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
     if (humanChoice === computerChoice) {
       return console.log("it's a draw!");
     } else if (
