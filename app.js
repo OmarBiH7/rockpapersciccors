@@ -21,7 +21,17 @@ function getHumanChoice() {
 }
 console.log(getHumanChoice(3));
 
-function playGame() {}
+function playGame() {
+  let humanScore = 0;
+  let computerScore = 0;
+
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+
+  playRound(humanSelection, computerSelection);
+
+  console.log("score - you: ${humanScore} Computer: ${computerScore}");
+}
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
     return "it's a draw!";
@@ -37,15 +47,9 @@ function playRound(humanChoice, computerChoice) {
     return "You lose! Rock beats Sciccors";
   } else humanChoice === "Sciccors" && computerChoice === "Paper";
   return "You win! Sciccors beats Paper";
-
-  const humanSelection = getHumanChoice();
-  const computerSelection = getComputerChoice();
-
-  playRound(humanSelection, computerSelection);
-
-  let humanScore = 0;
-  let computerScore = 0;
 }
+
+console.log("score - you: ${humanScore} Computer: ${computerScore}");
 
 console.log(playRound(getHumanChoice(), getComputerChoice()));
 console.log(playRound(getHumanChoice(), getComputerChoice()));
