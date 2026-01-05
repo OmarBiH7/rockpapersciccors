@@ -30,9 +30,11 @@ function playGame() {
       (humanChoice === "paper" && computerChoice === "rock") ||
       (humanChoice === "sciccors" && computerChoice === "paper")
     ) {
-      return console.log(`You Win! ${humanChoice} beats ${computerScore} `);
+      return console.log(`You Win! ${humanChoice} beats ${computerChoice} `);
+      humanScore++;
     } else {
       return console.log(`You Win! ${computerChoice} beats ${humanChoice} `);
+      computerScore++;
     }
   }
   playRound(getHumanChoice(), getComputerChoice());
