@@ -1,15 +1,14 @@
 console.log("Welcome to Rock, Paper, Sciccors!");
 
-function getComputerChoice(Rock, Paper, sciccors) {
+function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
 
-  if (randomNumber === 1) {
-    return "Rock";
-  } else if (randomNumber === 2) {
-    return "Paper";
-  } else randomNumber === 3;
-  {
-    return "Sciccors";
+  if (randomNumber === 0) {
+    return "rock";
+  } else if (randomNumber === 1) {
+    return "paper";
+  } else {
+    return "sciccors";
   }
 }
 
