@@ -46,9 +46,9 @@ function playGame() {
 
   console.log(`${humanScore} vs ${computerScore}`);
 
-  if (humanChoice > computerChoice) {
+  if (humanScore > computerScore) {
     return console.log("You Win!");
-  } else if (comnputerChoice > humanChoice) {
+  } else if (comnputerScore > humanScore) {
     return console.log("You Lose!");
   } else {
     return console.log("It's a Draw!");
