@@ -37,11 +37,22 @@ function playGame() {
       computerScore++;
     }
   }
+
   playRound(getHumanChoice(), getComputerChoice());
   playRound(getHumanChoice(), getComputerChoice());
   playRound(getHumanChoice(), getComputerChoice());
   playRound(getHumanChoice(), getComputerChoice());
   playRound(getHumanChoice(), getComputerChoice());
+
+  console.log(`${humanScore} vs ${computerScore}`);
+
+  if (humanChoice > computerChoice) {
+    return console.log("You Win!");
+  } else if (comnputerChoice > humanChoice) {
+    return console.log("You Lose!");
+  } else {
+    return console.log("It's a Draw!");
+  }
 }
 
 playGame();
